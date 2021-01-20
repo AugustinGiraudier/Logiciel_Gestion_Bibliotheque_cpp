@@ -7,6 +7,7 @@ Dans cette version, vous pouvez administrer une bibliothèque grâce à sa base 
 données SQLite.
 
 La base de donnée contient une dizaine de livres afin de pouvoir tester les différentes fonctionnalités.
+(Attention, la police d'écriture "Neometric Italic" fournie devra ^étre installée sur le système)
 
 fonctionnalités implémentées :
 
