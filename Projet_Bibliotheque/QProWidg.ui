@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QProWidg</class>
+ <widget class="QWidgetWithBdd" name="QProWidg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QProWidg</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Modification de la  base de données :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="BtnEmprunt">
+       <property name="text">
+        <string>Nouvel Emprunt</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/emprunt.png</normaloff>:/Projet_Bibliotheque/Ressources/emprunt.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnRestitution">
+       <property name="text">
+        <string>Restitution</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/restitution.png</normaloff>:/Projet_Bibliotheque/Ressources/restitution.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Emprunts :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="BtnNouveauLivre">
+       <property name="text">
+        <string>Nouveau Livre</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/ajoutLivre.png</normaloff>:/Projet_Bibliotheque/Ressources/ajoutLivre.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnSupprLivre">
+       <property name="text">
+        <string>Supprimer un Livre</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/supression.png</normaloff>:/Projet_Bibliotheque/Ressources/supression.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Interface Professionnelle :</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWidgetWithBdd</class>
+   <extends>QWidget</extends>
+   <header>qwidgetwithbdd.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Projet_Bibliotheque.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>BtnNouveauLivre</sender>
+   <signal>clicked()</signal>
+   <receiver>QProWidg</receiver>
+   <slot>BtnNouveauLivre()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnSupprLivre</sender>
+   <signal>clicked()</signal>
+   <receiver>QProWidg</receiver>
+   <slot>BtnSupprLivre()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>385</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnEmprunt</sender>
+   <signal>clicked()</signal>
+   <receiver>QProWidg</receiver>
+   <slot>BtnEmprunt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnRestitution</sender>
+   <signal>clicked()</signal>
+   <receiver>QProWidg</receiver>
+   <slot>BtnRestitution()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>621</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BtnNouveauLivre()</slot>
+  <slot>BtnSupprLivre()</slot>
+  <slot>BtnEmprunt()</slot>
+  <slot>BtnRestitution()</slot>
+ </slots>
+</ui>

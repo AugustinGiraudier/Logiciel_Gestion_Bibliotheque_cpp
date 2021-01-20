@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QUserWidg</class>
+ <widget class="QWidgetWithBdd" name="QUserWidg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>790</width>
+    <height>638</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QUserWidg</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>82</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Interface Utilisateur :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>82</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>82</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Mode :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QRadioButton" name="RBtnDecouverte">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Découverte</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="RBtnRecherche">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Recherche</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>82</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QUserDecouverteWidget" name="WidgetDecouverte" native="true"/>
+   </item>
+   <item>
+    <widget class="QUserRechercheWidget" name="WidgetRecherche" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWidgetWithBdd</class>
+   <extends>QWidget</extends>
+   <header>qwidgetwithbdd.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QUserRechercheWidget</class>
+   <extends>QWidget</extends>
+   <header>QUserRechercheWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QUserDecouverteWidget</class>
+   <extends>QWidget</extends>
+   <header>QUserDecouverteWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>RBtnDecouverte</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserWidg</receiver>
+   <slot>Decouverte(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>777</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBtnRecherche</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserWidg</receiver>
+   <slot>Recherche(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>783</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Decouverte(bool)</slot>
+  <slot>Recherche(bool)</slot>
+ </slots>
+</ui>

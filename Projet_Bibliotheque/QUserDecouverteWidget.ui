@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QUserDecouverteWidget</class>
+ <widget class="QWidget" name="QUserDecouverteWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QUserDecouverteWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Choisissez un Tag :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="BtnTagPolicier">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Policier</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/police.png</normaloff>:/Projet_Bibliotheque/Ressources/police.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagAventure">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Aventure</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/aventures.png</normaloff>:/Projet_Bibliotheque/Ressources/aventures.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagAction">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Action</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/action.png</normaloff>:/Projet_Bibliotheque/Ressources/action.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagEnfants">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Enfants</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/enfant.png</normaloff>:/Projet_Bibliotheque/Ressources/enfant.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagScienceFi">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Science-fiction</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/SciFI.png</normaloff>:/Projet_Bibliotheque/Ressources/SciFI.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="BtnTagScience">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Sciences</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/Sciences.png</normaloff>:/Projet_Bibliotheque/Ressources/Sciences.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagPolitique">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Politique</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/POLITIQUE.png</normaloff>:/Projet_Bibliotheque/Ressources/POLITIQUE.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagHistoire">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Histoire</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/histoire.png</normaloff>:/Projet_Bibliotheque/Ressources/histoire.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagFantastique">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Fantastique</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/fantastique.png</normaloff>:/Projet_Bibliotheque/Ressources/fantastique.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTagDivers">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Divers</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/troisPoints.png</normaloff>:/Projet_Bibliotheque/Ressources/troisPoints.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>819</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>788</width>
+        <height>287</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2"/>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Projet_Bibliotheque.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>BtnTagPolicier</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Policier(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagAventure</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Aventure(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Action(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>464</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagEnfants</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Enfants(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>596</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>644</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagScienceFi</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>SciFi(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>750</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>801</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagScience</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Science(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagPolitique</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Politique(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagHistoire</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Histoire(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>363</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagFantastique</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Fantastique(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnTagDivers</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserDecouverteWidget</receiver>
+   <slot>Divers(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>655</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>647</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Policier(bool)</slot>
+  <slot>Aventure(bool)</slot>
+  <slot>Action(bool)</slot>
+  <slot>Enfants(bool)</slot>
+  <slot>SciFi(bool)</slot>
+  <slot>Science(bool)</slot>
+  <slot>Politique(bool)</slot>
+  <slot>Histoire(bool)</slot>
+  <slot>Fantastique(bool)</slot>
+  <slot>Divers(bool)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/Projet_Bibliotheque">
+        <file>Ressources/ajoutLivre.png</file>
+        <file>Ressources/emprunt.png</file>
+        <file>Ressources/restitution.png</file>
+        <file>Ressources/supression.png</file>
+        <file>Ressources/livres.png</file>
+        <file>Ressources/livreBlanc.png</file>
+        <file>Ressources/loupeBlanche.png</file>
+        <file>Ressources/action.png</file>
+        <file>Ressources/aventures.png</file>
+        <file>Ressources/enfant.png</file>
+        <file>Ressources/fantastique.png</file>
+        <file>Ressources/histoire.png</file>
+        <file>Ressources/police.png</file>
+        <file>Ressources/POLITIQUE.png</file>
+        <file>Ressources/Sciences.png</file>
+        <file>Ressources/SciFI.png</file>
+        <file>Ressources/troisPoints.png</file>
+    </qresource>
+</RCC>

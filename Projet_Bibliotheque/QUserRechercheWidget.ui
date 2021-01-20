@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QUserRechercheWidget</class>
+ <widget class="QWidget" name="QUserRechercheWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QUserRechercheWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="BtnTitre">
+       <property name="text">
+        <string>Par Titre</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/livreBlanc.png</normaloff>:/Projet_Bibliotheque/Ressources/livreBlanc.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnAuteur">
+       <property name="text">
+        <string>Par Auteur</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/livreBlanc.png</normaloff>:/Projet_Bibliotheque/Ressources/livreBlanc.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="LineRecherche"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnRecherche">
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Projet_Bibliotheque.qrc">
+         <normaloff>:/Projet_Bibliotheque/Ressources/loupeBlanche.png</normaloff>:/Projet_Bibliotheque/Ressources/loupeBlanche.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="LblErreur">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color: rgb(255, 65, 68);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>814</width>
+        <height>185</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Projet_Bibliotheque.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>BtnTitre</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QUserRechercheWidget</receiver>
+   <slot>RechercheParTitre(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnRecherche</sender>
+   <signal>clicked()</signal>
+   <receiver>QUserRechercheWidget</receiver>
+   <slot>Rechercher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>RechercheParTitre(bool)</slot>
+  <slot>Rechercher()</slot>
+ </slots>
+</ui>
